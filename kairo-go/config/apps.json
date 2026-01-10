@@ -1,0 +1,24 @@
+{
+  "applications": [
+    {
+      "name": "RetroArch",
+      "icon": "/usr/share/icons/retroarch.png",
+      "executable": "/usr/bin/retroarch"
+    },
+    {
+      "name": "Pico-8",
+      "icon": "/usr/share/icons/pico8.png",
+      "executable": "/usr/bin/pico8 -fullscreen"
+    },
+    {
+      "name": "Picotron",
+      "icon": "/usr/share/icons/picotron.png",
+      "executable": "/usr/bin/picotron -fullscreen"
+    },
+    {
+      "name": "Settings",
+      "icon": "/usr/share/icons/settings.png",
+      "executable": "KAIRO_INTERNAL_SETTINGS"
+    }
+  ]
+}
