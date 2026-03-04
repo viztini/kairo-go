@@ -14,7 +14,7 @@ Kairo Go is a Bash-based TUI that allows users to:
 - Manage software by adding new executables with saved shortcuts.  
 - Access a developer shell for advanced operations.  
 - Update the system using standard package managers (`apt` or `pacman`).  
-- Include demo software such as **Snake**.  Thanks to 
+- Include demo software such as **Snake**.  Thanks to pjhades for the original base: https://github.com/pjhades/bash-snake
 
 This project is designed to be **ultra-lightweight**, running entirely in a terminal with minimal resource requirements.
 
