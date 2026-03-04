@@ -77,22 +77,17 @@ mkdir -p "$CONFIG_DIR" "$LAUNCHER_DIR"
 ############################
 BIN_DIR="/usr/local/bin"
 
-# Function to create global shortcuts
 install_shortcuts() {
-    # Paths to scripts
     SNAKE_SCRIPT="$BASE_DIR/snake.sh"
     KAIRO_SCRIPT="$BASE_DIR/kairo-tui.sh"
 
-    # Ensure scripts exist
     [[ -f "$SNAKE_SCRIPT" ]] && chmod +x "$SNAKE_SCRIPT"
     [[ -f "$KAIRO_SCRIPT" ]] && chmod +x "$KAIRO_SCRIPT"
 
-    # Create symlinks in /usr/local/bin
     [[ -f "$SNAKE_SCRIPT" ]] && ln -sf "$SNAKE_SCRIPT" "$BIN_DIR/snake"
     [[ -f "$KAIRO_SCRIPT" ]] && ln -sf "$KAIRO_SCRIPT" "$BIN_DIR/kairo"
 }
 
-# Install silently at startup
 install_shortcuts >/dev/null 2>&1
 
 ############################
@@ -161,7 +156,6 @@ add_launcher() {
     return
   fi
 
-  # Make it executable
   chmod +x "$PATH_EXEC"
 
   cat >"$LAUNCHER_DIR/$NAME.launch" <<EOL
